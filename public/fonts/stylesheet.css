@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Strayhorn MT Std';
+    src: url('StrayhornMTStd-Italic.eot');
+    src: local('Strayhorn MT Std Italic'), local('StrayhornMTStd-Italic'),
+        url('StrayhornMTStd-Italic.eot?#iefix') format('embedded-opentype'),
+        url('StrayhornMTStd-Italic.woff2') format('woff2'),
+        url('StrayhornMTStd-Italic.woff') format('woff'),
+        url('StrayhornMTStd-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Strayhorn MT Std';
+    src: url('StrayhornMTStd-ExtraBold.eot');
+    src: local('Strayhorn MT Std Extra Bold'), local('StrayhornMTStd-ExtraBold'),
+        url('StrayhornMTStd-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('StrayhornMTStd-ExtraBold.woff2') format('woff2'),
+        url('StrayhornMTStd-ExtraBold.woff') format('woff'),
+        url('StrayhornMTStd-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Strayhorn MT Std';
+    src: url('StrayhornMTStd-Bold.eot');
+    src: local('Strayhorn MT Std Bold'), local('StrayhornMTStd-Bold'),
+        url('StrayhornMTStd-Bold.eot?#iefix') format('embedded-opentype'),
+        url('StrayhornMTStd-Bold.woff2') format('woff2'),
+        url('StrayhornMTStd-Bold.woff') format('woff'),
+        url('StrayhornMTStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Strayhorn MT Std';
+    src: url('StrayhornMTStd-ExtraBoldIt.eot');
+    src: local('Strayhorn MT Std Extra Bold Italic'), local('StrayhornMTStd-ExtraBoldIt'),
+        url('StrayhornMTStd-ExtraBoldIt.eot?#iefix') format('embedded-opentype'),
+        url('StrayhornMTStd-ExtraBoldIt.woff2') format('woff2'),
+        url('StrayhornMTStd-ExtraBoldIt.woff') format('woff'),
+        url('StrayhornMTStd-ExtraBoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Strayhorn MT Std';
+    src: url('StrayhornMTStd-BoldItalic.eot');
+    src: local('Strayhorn MT Std Bold Italic'), local('StrayhornMTStd-BoldItalic'),
+        url('StrayhornMTStd-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('StrayhornMTStd-BoldItalic.woff2') format('woff2'),
+        url('StrayhornMTStd-BoldItalic.woff') format('woff'),
+        url('StrayhornMTStd-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Strayhorn MT Std';
+    src: url('StrayhornMTStd-LightItalic.eot');
+    src: local('Strayhorn MT Std Light Italic'), local('StrayhornMTStd-LightItalic'),
+        url('StrayhornMTStd-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('StrayhornMTStd-LightItalic.woff2') format('woff2'),
+        url('StrayhornMTStd-LightItalic.woff') format('woff'),
+        url('StrayhornMTStd-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Strayhorn MT Std';
+    src: url('StrayhornMTStd-Regular.eot');
+    src: local('Strayhorn MT Std Regular'), local('StrayhornMTStd-Regular'),
+        url('StrayhornMTStd-Regular.eot?#iefix') format('embedded-opentype'),
+        url('StrayhornMTStd-Regular.woff2') format('woff2'),
+        url('StrayhornMTStd-Regular.woff') format('woff'),
+        url('StrayhornMTStd-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Strayhorn MT Std';
+    src: url('StrayhornMTStd-Light.eot');
+    src: local('Strayhorn MT Std Light'), local('StrayhornMTStd-Light'),
+        url('StrayhornMTStd-Light.eot?#iefix') format('embedded-opentype'),
+        url('StrayhornMTStd-Light.woff2') format('woff2'),
+        url('StrayhornMTStd-Light.woff') format('woff'),
+        url('StrayhornMTStd-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

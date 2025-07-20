@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Strayhorn";
+  src: url("/fonts/StrayhornMTStd-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@utility masked-img {
+  mask-image: url("/images/shampoo-no-bg.png");
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  rotate: -90deg;
+  mask-position: center;
+}
+
+@layer base {
+  .font-strayhorn {
+    font-family: "Strayhorn", system-ui, -apple-system, sans-serif;
+  }
+  h1 {
+    @apply text-7xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  .hero-title {
+    @apply font-medium tracking-widest -m-[0.1em];
+  }
+
+  .hero-content {
+    @apply flex flex-col justify-center items-center absolute mt-40;
+  }
+
+  .hero-container {
+    @apply flex justify-center w-screen h-screen max-w-full text-white;
+  }
+
+  .hero-video {
+    @apply w-full h-full object-cover brightness-[0.4] fixed top-0 left-0 z-[-1];
+  }
+
+  .hero-logo {
+    @apply w-40 -mt-10 absolute flex self-center z-[-1];
+  }
+
+  .navbar {
+    @apply text-white w-full p-4 object-cover flex backdrop-blur-xs items-center fixed top-0 left-0 z-1000; /* Slightly transparent for a soft effect */
+  }
+
+  .navbar-brand {
+    @apply text-2xl font-bold;
+  }
+
+  .navbar-menu {
+    @apply object-cover flex gap-4;
+  }
+
+  .hero-text {
+    @apply absolute bottom-20 justify-between flex w-screen max-w-7xl px-4 items-center;
+  }
+
+  .hero-text-left {
+    @apply flex flex-col items-start text-left max-w-md;
+  }
+
+  .hero-text-right {
+    @apply flex flex-col items-end text-right max-w-md;
+  }
+
+  .hero-button {
+    @apply text-white bg-transparent border-2 border-white mt-4 px-6 py-3 rounded-full font-semibold cursor-pointer flex items-center gap-4 transition-all duration-300 ease-in-out;
+  }
+
+  .hero-button:hover {
+    @apply bg-white text-black;
+  }
+
+  .hero-button:hover .arrow-icon {
+    @apply transform translate-x-2;
+  }
+
+  .arrow-icon {
+    @apply size-5 transition-transform duration-300 ease-out;
+  }
+
+  .hero-arrow-down {
+    @apply fixed right-4 top-16 flex flex-col items-center;
+  }
+
+  .hero-vertical-line {
+    @apply w-[2px] h-[80vh] bg-white opacity-80;
+  }
+
+  .product-container {
+    @apply flex text-black min-h-screen h-[600vh] w-screen max-w-full relative bg-gradient-to-br from-pink-300 via-pink-200 to-rose-200;
+  }
+
+  .product-info {
+    @apply w-full h-full text-center absolute left-1/2 transform -translate-x-1/2 flex flex-col gap-[100vh] pt-[100vh] max-w-5xl;
+  }
+
+  .product-benefit {
+    @apply max-w-xs w-lg p-4 rounded-2xl gap-6 flex flex-col items-center h-44 opacity-0;
+  }
+
+  /* Odd children (1st, 3rd, 5th...) - Left side */
+  .product-benefit:nth-child(odd) {
+    @apply flex self-start;
+  }
+
+  /* Even children (2nd, 4th, 6th...) - Right side */
+  .product-benefit:nth-child(even) {
+    @apply flex self-end;
+  }
+
+  .ingredient-container {
+    @apply flex p-20 flex-row items-center gap-40 justify-center size-full min-h-screen bg-gradient-to-br from-orange-200 via-amber-100 to-yellow-50;
+  }
+
+  .model-img {
+    @apply max-w-7xl max-h-96 object-cover rounded-2xl shadow-lg scale-[1.3];
+  }
+
+  .ingredient-title {
+    @apply font-semibold text-center absolute text-9xl text-transparent tracking-[0.15em];
+    -webkit-text-stroke: 4px white;
+  }
+
+  .ingredient-list {
+    @apply list-none flex flex-col gap-4;
+  }
+
+  .ingredient-item {
+    @apply flex gap-4 text-sm flex-row text-justify items-center;
+  }
+}
