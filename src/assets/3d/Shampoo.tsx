@@ -8,24 +8,9 @@ Title: Coconut Shampoo with Moisturizing Oils
 
 import * as THREE from "three";
 import { useRef, type JSX } from "react";
-import { ContactShadows, Float, Plane, useGLTF } from "@react-three/drei";
-import { type GLTF } from "three-stdlib";
+import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-
-type GLTFResult = GLTF & {
-  nodes: {
-    Object_4: THREE.Mesh;
-    Object_5: THREE.Mesh;
-    Object_6: THREE.Mesh;
-    Object_7: THREE.Mesh;
-  };
-  materials: {
-    ["Material.007"]: THREE.MeshStandardMaterial;
-    ["Material.002"]: THREE.MeshStandardMaterial;
-    ["Material.003"]: THREE.MeshPhysicalMaterial;
-    Cheap_Plastic: THREE.MeshPhysicalMaterial;
-  };
-};
+import { type Mesh } from "three";
 
 export default function Model(props: Readonly<JSX.IntrinsicElements["group"]>) {
   const { nodes, materials } = useGLTF("/models/shampoo.gltf");
@@ -43,25 +28,25 @@ export default function Model(props: Readonly<JSX.IntrinsicElements["group"]>) {
                 <mesh
                   castShadow
                   receiveShadow
-                  geometry={nodes.Object_4.geometry}
+                  geometry={(nodes.Object_4 as Mesh).geometry}
                   material={materials["Material.007"]}
                 />
                 <mesh
                   castShadow
                   receiveShadow
-                  geometry={nodes.Object_5.geometry}
+                  geometry={(nodes.Object_5 as Mesh).geometry}
                   material={materials["Material.002"]}
                 />
                 <mesh
                   castShadow
                   receiveShadow
-                  geometry={nodes.Object_6.geometry}
+                  geometry={(nodes.Object_6 as Mesh).geometry}
                   material={materials["Material.003"]}
                 />
                 <mesh
                   castShadow
                   receiveShadow
-                  geometry={nodes.Object_7.geometry}
+                  geometry={(nodes.Object_7 as Mesh).geometry}
                   material={materials.Cheap_Plastic}
                 />
               </group>
