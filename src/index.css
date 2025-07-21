@@ -142,4 +142,88 @@
   .ingredient-item {
     @apply flex gap-4 text-sm flex-row text-justify items-center;
   }
+
+  .flow-container {
+    @apply flex sticky top-0 left-0 flex-col justify-between p-8 w-screen max-w-full h-full min-h-screen bg-gradient-to-br from-blue-200 via-blue-100 to-cyan-50 z-10;
+  }
+
+  .black-focus {
+    @apply w-full h-full bg-black opacity-50 fixed top-0 left-0 z-20;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0) 45%,
+      rgba(0, 0, 0, 0.45) 100%
+    );
+    pointer-events: none;
+  }
+
+  .flow-step {
+    @apply flex flex-col w-full h-full z-10;
+  }
+
+  .flow-step-text {
+    @apply z-40 text-start mt-16 font-bold text-transparent tracking-wider;
+    -webkit-text-stroke: 4px white;
+  }
+
+  .flow-step-image {
+    @apply w-full h-screen object-cover absolute top-0 left-0;
+    transition: all 2000ms ease-in-out;
+  }
+
+  .flow-step-description {
+    @apply text-lg text-white  max-w-xl w-full font-semibold text-justify;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+    transition: all 2000ms ease-in-out;
+  }
+
+  .flow-step-buttons {
+    @apply flex flex-row justify-around items-center gap-20 z-50;
+  }
+
+  .flow-step-button {
+    @apply text-white w-1/4 border-2 border-white mt-12 h-28 rounded-2xl font-semibold cursor-pointer flex items-end transition-all duration-300 ease-in-out justify-end p-4 z-50;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
+  }
+
+  .flow-step-button:nth-child(1) {
+    background-image: url("/images/step1.webp");
+  }
+
+  .flow-step-button:nth-child(2) {
+    background-image: url("/images/step2.jpg");
+  }
+
+  .flow-step-button:nth-child(3) {
+    background-image: url("/images/step3.jpg");
+  }
+
+  .flow-step-button:nth-child(4) {
+    background-image: url("/images/step4.avif");
+  }
+
+  .flow-step-button.active {
+    @apply border-yellow-400 border-4 scale-105 shadow-lg;
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.6);
+  }
+
+  .flow-step-button:hover {
+    @apply scale-105 border-yellow-200;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  }
+
+  .footer-container {
+    @apply text-white flex-col w-full h-screen relative bg-black p-12 object-cover flex justify-center items-center z-[10000];
+  }
+
+  .footer-text {
+    @apply text-center max-w-4xl text-5xl font-bold text-transparent tracking-wider;
+    -webkit-text-stroke: 1px white;
+  }
+
+  .footer-container button {
+    @apply mt-8 px-5 py-3 flex flex-row gap-2 bg-white text-black rounded-full font-semibold transition-all duration-300 ease-in-out;
+  }
 }

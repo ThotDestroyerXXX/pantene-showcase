@@ -2,20 +2,23 @@ import Hero from "./components/hero";
 import Navbar from "./components/navbar";
 import Benefit from "./components/benefit";
 import gsap from "gsap";
-import { ScrollTrigger, SplitText } from "gsap/all";
+import { ScrollSmoother, ScrollTrigger, SplitText } from "gsap/all";
 import Ingredient from "./components/ingredient";
-import Product from "./components/product";
+import Flow from "./components/flow";
+import Footer from "./components/footer";
+import BlackFocus from "./components/black-focus";
 
 const App = () => {
-  gsap.registerPlugin(SplitText);
-  gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(SplitText, ScrollTrigger, ScrollSmoother);
   return (
     <>
+      <BlackFocus />
       <Navbar />
       <Hero />
       <Benefit />
       <Ingredient />
-      <Product />
+      <Flow />
+      <Footer />
     </>
   );
 };

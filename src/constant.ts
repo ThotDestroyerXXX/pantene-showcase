@@ -79,3 +79,34 @@ export const ingredientList = [
     title: "Supports healthy scalp and hair growth.",
   },
 ];
+
+export const stepList = [
+  {
+    id: "step1",
+    title: "Cleanse",
+    description:
+      "Gently removes dirt, oil, and product buildup without stripping natural moisture, leaving your scalp refreshed and your hair clean from root to tip.",
+    image: "/images/step1.webp",
+  },
+  {
+    id: "step2",
+    title: "Restore",
+    description:
+      "Infuses each strand with essential nutrients and natural extracts to repair damage, reduce breakage, and bring life back to dull or stressed hair.",
+    image: "/images/step2.jpg",
+  },
+  {
+    id: "step3",
+    title: "Strengthen",
+    description:
+      "Fortifies the hair structure from within, improving elasticity and resilience to help prevent future breakage, split ends, and thinning.",
+    image: "/images/step3.jpg",
+  },
+  {
+    id: "step4",
+    title: "Shine",
+    description:
+      "Seals in moisture and smooths the cuticle for a soft, silky finish with natural shine that lasts all day.",
+    image: "/images/step4.avif",
+  },
+];
